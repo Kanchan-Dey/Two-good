@@ -1,0 +1,725 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+    background-color: rgb(248, 248, 248);
+}
+::selection
+{
+    color:white;
+    background-color: black;
+}
+#nav 
+{
+    height:18vh;
+    width:100%;
+  
+    position: fixed;
+    padding:1.2vw;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#logo
+{
+    font-size: 2vw;
+    height:16vh;
+   
+    overflow: hidden;
+    
+}
+#logo svg{
+    display: block;
+    margin-bottom:1.2vw;
+    font-size: 1vw;
+}
+#menu
+{
+    font-size:1vw;
+    font-family: Helvetica;
+    font-weight: 400;
+    display:flex;
+    align-items: center;
+   gap: 40px;
+  
+}
+#icons
+{
+    display: flex;
+    gap: 20px;
+    background-color: transparent;
+    margin:0.5vw;
+    padding:0.5vw 2vw;
+    border-radius: 25px;
+    justify-content: space-between;
+    
+    
+}
+#icons a{
+    text-decoration: none;
+    color:black;
+}
+#menu a
+{
+    text-decoration: none;
+    color:black;
+}
+
+#cursor
+{
+    height:180px;
+    width:180px;
+    background-color: rgba(129, 124, 118, 0.788);
+    border-radius: 50%;
+    transform: translate(-50%,-50%) scale(0);
+   
+    position: fixed;
+
+}
+#page1
+{
+    min-height: 100vh;
+    position:relative;
+    width:100%;
+   
+    padding:0vw 1vw;
+    padding-top:26vh;
+    line-height: 14vw;
+   
+}
+#page1 h1{
+    font-family:Futura;
+    font-size: 15vw;
+    font-weight: 700;
+    letter-spacing: -8px;
+}
+#video-container
+{
+    height:100vh;
+    background-color: gray;
+    width:100%;
+    margin-top: 1.5vw;
+   
+    cursor: pointer;
+}
+.background-clip
+{
+    object-fit: cover;
+    height:100%;
+    width:100%;
+}
+ #play
+{
+    padding:1vw 2vw;
+    height:100px;
+    background-color: black;
+    color:white;
+    border-radius: 50%;
+    position:fixed;
+    font-size: 1.5vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: Futura;
+    font-weight: 300;
+    letter-spacing: 2px;
+    opacity: 0;
+    
+  
+    transform:translate(-50%,-50%) scale(0);
+    
+}
+#page2
+{
+    height:100vh;
+    width:100%;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#page2 .elem
+{
+    margin-top:5%;
+    height:95%;
+    width:30%;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 .elem img{
+    object-fit: cover;
+    height:100%;
+    width:100%;
+    scale:1.2;
+}
+#page2 .elem .shophome
+{
+    width:20%;
+    height:7vh;
+    background-color:rgba(193, 170, 163, 0.84);
+    position:fixed;
+   border-radius: 25px;
+   display:flex;
+   align-items: center;
+   justify-content: space-around;
+   
+}
+#page2 #elem2 .shophome
+{
+    width:20%;
+    height:7vh;
+    background-color:rgba(221, 206, 108, 0.818);
+    position:fixed;
+   border-radius: 25px;
+   display:flex;
+   align-items: center;
+   justify-content: space-around;
+   
+}
+#page2 #elem3 .shophome
+{
+    width:20%;
+    height:7vh;
+    background-color:rgba(255, 255, 255, 0.838);
+    color:black;
+    position:fixed;
+   border-radius: 25px;
+   display:flex;
+   align-items: center;
+   justify-content: space-around;
+   
+}
+#page2 .elem .shophome h3
+{
+    color:black;
+    font-size: 1vw;
+    font-family: Helvetica;
+    font-weight: 400;
+
+}
+#page2 .elem .shophome .dot{
+    color:black;
+    font-size: 0.8vw;
+    z-index: 99;
+}
+#page2 .elem .shophome .arrow{
+    color:black;
+    font-size: 2vw;
+    z-index: 99;
+}
+
+#page3
+{
+    height:200vh;
+    width:100%;
+    position:relative;
+    padding:3vw;
+}
+#page3 h1{
+    font-size: 3.5vw;
+    font-family: Futura;
+    font-weight: 500;
+    line-height: 1;
+}
+#writing
+{
+    display:flex;
+   
+    justify-content: space-between;
+}
+.left
+{
+    width:50%;
+}
+.right
+{
+    width:30%;
+    display:flex;
+    flex-direction: column;
+}
+.right p{
+    font-size: 1.2vw;
+    font-family: Helvetica;
+    font-weight: 400 ;
+    padding-bottom:2vw;
+}
+.right a{
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:50%;
+    text-decoration:none;
+    color:rgba(0, 0, 0, 0.796);
+    border-bottom:1px solid black;
+    
+}
+#page3 #container
+{
+    margin-top:3vw;
+    height:80%;
+    width:100%;
+   
+    display:flex;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#container .elemo
+{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:45%;
+    height:50%;
+    
+
+  margin:1vw;
+}
+.elemo h4{
+    font-size: 1vw;
+    font-family: helvetica;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+.elemo h5{
+    font-size: 1vw;
+    font-family: helvetica;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+#page4
+{
+    height:100vh;
+    width:100%;
+    margin-top:20vh ;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:2vw;
+    position: relative;
+}
+#leftie
+{
+    font-family: Helvetica;
+    width:40%;
+    margin:2vw;
+}
+#leftie p{
+    font-size: 1.5vw;
+    margin-bottom:2vw;
+}
+#leftie a{
+    font-size: 1vw;
+    color:black;
+    font-family: Futura;
+    font-weight: 300;
+    text-decoration: none;
+}
+#leftie a:hover{
+    text-decoration: underline;
+   transform: translateY(-10%);
+}
+#rightie
+{
+    display:flex;
+    justify-content: space-between;
+    width:60%;
+    
+    overflow: hidden;
+}
+#rightie img 
+{
+    height:100%;
+    width:48%;
+}
+@media (max-width:600px)
+{
+    #page1
+    {
+       min-height: 70vh;
+        padding:0 3vw;
+        padding-top:16vh;
+        position: relative;
+        margin-top:15vh;
+    }
+    #page1 h1
+    {
+        font-size: 15vw;
+        letter-spacing: -2px;
+        line-height: 15vw;
+    }
+
+    #video-container
+    {
+        position: relative;
+    height:25vh;
+    width:100%;
+    margin-top: 1.5vw;
+    }
+    #play
+   {
+    padding:2vw 5vw;
+    background-color: rgba(0, 0, 0, 0.772);
+    color:white;
+    border-radius: 50%;
+    position:absolute;
+    font-size: 3vw;
+    transform:translate(-50% ,-50%);
+    text-transform: uppercase;
+    font-family: Futura;
+    font-weight: 500;
+    opacity: 1;
+    scale:1;
+    left:50%;
+    top:55%;
+    }
+    #page2
+    {
+        padding:0vw 3vw;
+        display:flex;
+        flex-direction: column;
+        margin-top:15vh;
+        min-height: 250vh;
+        position: relative;
+        justify-content:center ;
+    }
+    #page2 .elem
+   {
+   
+    min-height:100vh;
+    width:100%;
+    
+    overflow: hidden;
+    }
+    #page2 .elem img{
+        object-fit: cover;
+        height:100%;
+        width:100%;
+        scale:1.1;
+      
+    }
+
+    #page2 #elem1 .shophome
+{
+    width:80%;
+    height:7vh;
+    background-color:rgb(193, 170, 163);
+    position:absolute;
+   border-radius: 30px;
+   display:flex;
+   align-items: center;
+   justify-content: space-around;
+   z-index:99;
+   
+}
+#page2 #elem2 .shophome
+{
+    width:80%;
+    height:7vh;
+    background-color:rgba(221, 206, 108, 0.818);
+    position:absolute;
+   border-radius: 30px;
+   display:flex;
+   align-items: center;
+   justify-content: space-around;
+   z-index:99;
+   
+}
+#page2 #elem3 .shophome
+{
+    width:80%;
+    height:7vh;
+    background-color:rgba(255, 255, 255, 0.838);
+    position:absolute;
+   border-radius: 30px;
+   display:flex;
+   align-items: center;
+   justify-content: space-around;
+   z-index:99;
+   
+}
+#page2 .elem .shophome h3
+{
+    color:black;
+    font-size: 4vw;
+    font-family: Helvetica;
+    font-weight: 400;
+
+}
+#page2 .elem .shophome .arrow{
+    color:black;
+    font-size: 3vw;
+    z-index: 99;
+}
+#page2 .elem .shophome .dot{
+    color:black;
+    font-size: 1vw;
+    z-index: 99;
+}
+#page3
+{
+    margin-top:25vh;
+    height:200vh;
+    width:100%;
+    position:relative;
+    padding:3vw;
+}
+#writing
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width:100%;
+    margin-top:10vh;
+}
+.left{
+    width:100%;
+   
+  
+}
+#page3 h1 
+{
+    font-size: 10vw;
+    font-family: Helvetica;
+    text-align: center;
+    font-weight: 800;
+}
+.right
+{
+    width:100%;
+    margin-top: 5vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+.right p
+{
+    font-size: 5vw;
+}
+.right a 
+{
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 2vh;
+
+}
+#page3 #container
+{
+    margin-top:20vh;
+    height:80%;
+    width:100%;
+   
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+#container .elemo
+{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:45%;
+    height:50%;
+    
+  
+  margin:1vw;
+}
+.elemo h4{
+    font-size: 5vw;
+    font-family: helvetica;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+.elemo h5{
+    font-size: 4vw;
+    font-family: helvetica;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+.elemo img 
+{
+    width:280px;
+    height:280px;
+}
+#nav
+{
+    height:16vh;
+
+   top: 0;
+}
+#logo
+{
+    font-size: 2vw;
+    height:13vh;
+   
+    overflow: hidden;
+    
+}
+#logo svg
+{
+  font-size: 1vw;
+}
+#menu a 
+{
+   display: none;
+}
+#icons a 
+{
+    font-size: 6vw;
+}
+#page4
+{
+    min-height:150vh;
+    display:block;
+    position: relative;
+    margin-top:90vh;
+    border-top: 1px solid black ;
+}
+#leftie
+{
+    font-family: Helvetica;
+    width:100%;
+    margin:2vw;
+}
+#leftie h1
+{
+    text-align: center;
+}
+#leftie p{
+    font-size: 4vw;
+    margin-bottom:2vw;
+    margin-top: 2vw;
+}
+#leftie a{
+    font-size: 3vw;
+    color:black;
+    font-family: Futura;
+    font-weight: 300;
+    text-decoration: none;
+    
+}
+#leftie a:hover{
+    text-decoration: underline;
+   transform: translateY(-10%);
+}
+#rightie
+{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    flex-direction: column;
+    overflow: hidden;
+    gap:30px;
+    align-items: center;
+    margin-top: 5vh;
+}
+#rightie img 
+{
+    height:50%;
+    width:80%;
+}
+}
+footer{
+    height:100vh;
+    width:100%;
+  
+    padding:2vw;
+   
+}
+footer h1 a {
+    color:black;
+    text-decoration: none;
+ 
+}
+footer h1{
+    font-family: Futura;
+    font-weight: 400;
+    text-align: center;
+    font-size: 5vw;
+    border-bottom: 1px solid black;
+}
+#socials
+{
+   
+    display:flex;
+    flex-direction: column;
+}
+#socials a{
+    color:black;
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: Helvetica;
+    font-weight: 400;
+}
+#socials h3{
+    color:black;
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: Helvetica;
+    font-weight: 400;
+    margin-bottom:2vw;
+}
+#socials a:hover{
+    opacity:0.5;
+}
+#foot-container
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:20vh;
+}
+#FAQS
+{
+   
+    display:flex;
+    flex-direction: column;
+}
+#FAQS a{
+    color:black;
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: Helvetica;
+    font-weight: 400;
+}
+#FAQS a:hover{
+    opacity:0.5;
+}
+#FAQS h3{
+    color:black;
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: Helvetica;
+    font-weight: 400;
+    margin-bottom:2vw;
+}
+#loggo svg
+{
+    height:26vh;
+    width:25vw;
+}
